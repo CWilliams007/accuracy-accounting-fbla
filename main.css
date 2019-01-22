@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+user-select: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: white;
+    height: 96px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    padding: 30px 0;
+    transition: .2s;
+}
+
+nav img.menubtn {
+    height: 60px;
+    padding: 18px 10px;
+    position: absolute;
+    right: 20px;
+    transition: .6s;
+    transform: rotateZ(0);
+    border-radius: 50%;
+}
+
+nav img#logo {
+    height: 88px;
+    background: white;
+    float: left;
+    padding: 4px 0 4px 10px;
+}
+
+nav h1 {
+    font-size: 36px;
+    padding: 26px 0;
+    color: rgb(105, 105, 105);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    float: left;
+}
+
+nav h1#menu {
+    font-size: 33px;
+    padding: 28px 0;
+    color: rgb(77, 209, 226);
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    position: absolute;
+    right: 98px;
+    text-transform: uppercase;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+div#myDIV {
+    padding: 164px 20px 20px 20px;
+    transition: .4s;
+    width: 320px;
+    font-size: 22px;
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    height: calc(100vh - 78px);
+    position: fixed;
+    right: -360px;
+    top: 0;
+    z-index: 80;
+}
+
+div#myDIV a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 16px 0 16px 5px;
+    border-bottom: 1px rgb(49, 49, 49) solid;
+    transition: .2s;
+    outline: 0px rgb(77, 209, 226) solid;
+
+}
+
+div#myDIV a:hover {
+    background: white;
+    color: black;
+    padding: 16px 0 16px 5px;
+}
+
+
+header {
+    background: url('accuracy head.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    height: auto;
+}
+
+header:not(:first-of-type) {
+    margin: 20px 0;
+}
+
+#accuracyreports {
+    background: url('accuracy reports.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#accuracyteam {
+    background: url('accuracy team.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#accuracyabout {
+    background: url('accuracy about.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .headerBox {
+    padding: 396px 0 240px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header:not(:first-of-type) .headerBox {
+    padding: 240px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .headerBox .contentBox {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+}
+
+header .headerBox h1 {
+    font-size: calc(32px + 1.8vw);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header .headerBox h4 {
+    font-size: calc(22px + .4vw);
+    color: rgb(77, 209, 226);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    border-top: 4px rgb(77, 209, 226) solid;
+    padding-top: 10px;
+}
+
+header .headerBox p {
+    font-size: 22px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+header .headerBox a {
+    display: inline-block;
+    font-size: calc(22px + .4vw);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    border: 4px white solid;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+header .headerBox a:hover {
+    background: white;
+    color: black;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    outline: 4px solid rgb(49, 49, 49);
+    outline-offset: -20px;
+    position: relative;
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+article div {
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article h1 {
+    font-size: calc(24px + 2vw);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+article p {
+    font-size: 22px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    text-align: left;
+    line-height: 32px;
+}
+
+#closing {
+    margin: 0;
+}
+
+article a {
+    display: inline-block;
+    font-size: calc(22px + .4vw);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    border: 4px black solid;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+article div.image {
+    float: left;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1534322869500-14fc9f5f5767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-position: center center;
+    background-size: cover;
+}
+
+#consult {
+    background: url('https://images.pexels.com/photos/1249158/pexels-photo-1249158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+}
+
+#koch {
+    background: url('https://images.pexels.com/photos/935756/pexels-photo-935756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+}
+
+#letter {
+    background: url('https://images.pexels.com/photos/1120344/pexels-photo-1120344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+}
+
+#office {
+    background: url('https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+}
+
+article a:hover {
+    background: black;
+    color: white;
+}
+
+
+section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    position: relative;
+    outline: 4px solid rgb(77, 209, 226);
+    outline-offset: -20px;
+}
+
+section div {
+    padding: 20px;
+}
+
+section:first-of-type div:nth-of-type(1), section:first-of-type div:nth-of-type(2), section:first-of-type div:nth-of-type(3) {
+    border-bottom: 4px rgb(77, 209, 226) solid;
+}
+
+section h2 {
+    font-size: 28px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    clear: both;
+}
+
+section p {
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    text-align: left;
+    line-height: 30px;
+}
+
+section img {
+    display: block;
+    margin: 20px 0;
+    float: left;
+    height: 128px;
+}
+
+.portrait {
+    border-radius: 50%;
+}
+
+section a {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    border: 4px rgb(77, 209, 226) solid;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+section a.full {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section h4 {
+    font-size: calc(22px + .4vw);
+    color: rgb(77, 209, 226);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    border-top: 4px rgb(77, 209, 226) solid;
+    padding-top: 10px;
+}
+
+section h6 {
+    font-size: 16px;
+    color: rgb(149, 149, 149);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    border-top: 1px rgb(158, 203, 209) solid;
+    padding-top: 10px;
+}
+
+
+section a:hover {
+    background: rgb(77, 209, 226);
+    color: white;
+}
+
+@media only screen and (max-width: 1112px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section div {
+        border-bottom: 4px rgb(77, 209, 226) solid;
+    }
+
+    section div:last-of-type {
+        border: none;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    article div.image {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    article img {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    article a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    section a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #logotext {
+        display: none;
+    }
+
+}
+
+blockquote img {
+    display: block;
+    height: 60px;
+    margin: 10px 0 0;
+}
+
+blockquote {
+    font-size: 22px;
+    color: rgb(49, 49, 49);
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 38px;
+    outline: 4px solid rgb(49, 49, 49);
+    outline-offset: -20px;
+    display: block;
+    max-width: 1400px;
+    padding: 40px;
+}
+
+
+blockquote cite {
+    display: block;
+    margin: 20px 0 0;
+    color: rgb(77, 209, 226);
+}
+
+blockquote hr {
+    margin: 40px auto;
+    width: 40%;
+    border: rgb(77, 209, 226) 2px solid;
+}
+
+blockquote a {
+    display: inline-block;
+    
+    font-size: 22px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px auto;
+    border: 4px rgb(77, 209, 226) solid;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: .4s;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote a:hover {
+    background: rgb(77, 209, 226);
+    color: white;
+}
