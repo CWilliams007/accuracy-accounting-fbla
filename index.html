@@ -1,159 +1,408 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/czs7dul.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </head>
-<body>
+
+<body onresize="closeNav()">
+    <script>
+        AOS.init();
+    </script>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Team</a>
+        <a href="#">Plans</a>
+        <a href="#">Contact</a>
+        <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
 
     <nav>
-        <img src="objective.png" alt="" id="logo"> 
-        <h1 id="logotext">Accuracy Accounting</h1>
-        <h1 onclick="myFunction()" id="menu" class="pointer">Menu</h1>  
-        <img src="close_button.png" onclick="myFunction()" class="menubtn pointer" id="spin">
-    </nav>
-    <div id="myDIV">
-            <a href="index.html" class="links">Home</a>
-            <a href="about.html" class="links">About</a>
-            <a href="#" class="links">Services</a>
-            <a href="#" class="links">Consultations</a>
-            <a href="faq.html" class="links">Contact & FAQ</a>
-            <a href="#" class="links">Philanthropy</a>
+        <a href="#" id="image"><img src="top_logo.png" alt=""></a>
+        <div id="desktop">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Plans</a>
+            <a href="#">Contact</a>
         </div>
+        <span onclick="openNav()"><i class="fas fa-bars"></i> Menu</span>
+        <div id="social">
+            <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i></a>
+            <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
     <header>
-        <div class="headerBox">
-            <div class="contentBox">
-            <h4>Save your small business time and money with</h4>
-            <h1>
-                Accuracy Accounting & Financial
-            </h1>
-            <p>Here at Accuracy we make meeting customer needs our highest priority. Accuracy is a trusted Accounting with over 100 clients from across the country. At Accuracy Accounting we offer all different types of services to fit any budget.</p>
-            <a href="#">Learn More <i class="fas fa-caret-right"></i></a>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Accuracy Accounting</h1>
+                <h2>Our mission is to empower small business owners as they grow their dream into a reality.</h2>
+                <a href="#">Learn More</a>
             </div>
+        </div>
+        <div class="spacer">
         </div>
     </header>
+
     <article>
-        <div class="image">
+        <div class="spacer">
         </div>
-       <div>
-        <h1>About Accuracy</h1>
-        <p>Accuracy Accounting & Financial provides friendly and knowledgeable CPAs that you can trust to help manage your company or family finances. At Accuracy it is our mission to meet customer needs no matter the budget. From growing families to huge corporations we do it all. Accuracy Accounting offers a wide range of services from bookkeeping to annual reports and everything in between. Accuracy Accounting has been operating for over 25 years and has served over 100 different Fortune 500 companies as well as over 50,000 families. Let us help you, your family, or your business manage their finances with a free, no obligation consultation. </p>
-        <a href="#">Get your free consultation <i class="fas fa-caret-right"></i></a>
-       </div>
-       
+        <div class="wrapper">
+            <div class="container">
+                <h1>Our Story</h1>
+                <h2>Since 2003 we have been serving Arizona's small businesses.</h2>
+                <p>In 2003 two friends and GCU Business Graduates, Leanna Murray and Indiana Ortega founded
+                    Accuracy
+                    Accounting in Phoenix, Arizona. Leanna and Indiana's parents had been a small business owners
+                    in
+                    Scottsdale, AZ since before either of them were born. Leanna and Indiana were passionate about
+                    helping small businesses grow. Since 2003 Accuracy Accounting has helped over 200 small
+                    business
+                    owners in grow their companies.</p>
+                <p>Leanna, Indiana, and the team at Accuracy Accounting would love to help your small business
+                    grow.
+                    Click the link below to see how we can help your small business thrive.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
     </article>
-    
-    <blockquote>
-        <img src="apple.png" alt="">
-        On of the most efficient, professional, and transparent accounting firms that I have ever worked with. If you are looking for a great firm that really cares about its clients this is it. Accuracy really is the standard when it comes to accounting firms.
-        <br>
-        <cite>-Luca Maestri, CFO Apple</cite>
-        <hr>
-        <img src="costco2.png" alt="">
-        Accuracy did exactly what it promised to do. Since hiring Accuracy in 2005 our company has grown exponentially and Accuracy has been there to help us every step of the way. Accuracy's services are more than worth it. Your will get your money back many times over.
-        <br>
-        <cite>-Jim Sinegal, CEO Costco</cite>
-        <hr>
-        <img src="fiverr.png" alt="">
-       As the world's largest online freelance marketplace we have millions of transactions taking place each and every day. We needed an accounting firm we could trust to manage our company's online transactions. Accuracy's team really si the best in the business. I see no reason why we would ever leave.
-        <br>
-        <cite>-Micha Kaufman, CEO Fiverr</cite>
-    </blockquote>
+
     <section>
-        <div>
-            <img src="tax.png" alt="">
-           <h2>Tax Services</h2>
-           <p>Doing your taxes can be a daunting tax wether your a parent in a growing family or a executive in a larger firm. Let one of our experienced CPAs manage your taxes while helping you build a plan that will keep your family or business growing.</p>
-           <p>Many families and small business don't take advantage of all the savings they have access too. Our knowledgeable CPAs can help save you money.</p>
-           <a href="#">Get Started <i class="fas fa-caret-right"></i></a> 
+        <div class="spacer">
         </div>
-        <div>
-           <img src="audit.png" alt="">
-           <h2>Audit Services</h2> 
-           <p>Larger companies complete audits several times a year. Sometimes smaller companies do audits annually. However doing an auditing can be time consuming and tedious. Let us do a full audit on your business no matter the size or budget. </p>
-           <p>Many banks also require audits for startups and small businesses to get approved for a loan. Let us help you navigate the process of getting approved for a small business loan.</p></p>
-           <a href="#">Get Started <i class="fas fa-caret-right"></i></a>     
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Our Services</h1>
+                <h2>We offer a wide range of different services. Find exactly what you need to help your business
+                    grow.</h2>
+                <a href="#">Learn More</a>
+            </div>
         </div>
-        <div> 
-            <img src="books.png" alt="">
-           <h2>Bookkeeping Services</h2>
-           <p>When running a business or taking care of a family the last thing you want to do is worry about bookkeeping. However keeping a financial record is an integral part of raising a financially healthy family and running a business. </p>
-            <p>Let one of our certified CPAs manage your bookkeeping so you, your family, or your business can get back to what's really important.</p>
-            <a href="#">Get Started <i class="fas fa-caret-right"></i></a>  
+        <div class="spacer">
         </div>
-        <div>
-            <img src="pay.png" alt="">
-           <h2>Payroll Services</h2>
-           <p>Managing payroll in a small business or startup can be difficult and time consuming. As a small business owner you have more important things to do than manage payroll. Let one of our trained CPAs manage your payroll. Theres no need to spend hours trying to figure it out yourself. With out low rates you'll save yourself time and money.</p>
-            <a href="#">Get Started <i class="fas fa-caret-right"></i></a>  
-        </div>
-        <div>
-            <img src="innovation.png" alt="">
-           <h2>Business Formation</h2>
-           <p>Figuring out how to start your business can be difficult but with our team of specialist we can help your business up and running in no time at all.  </p>
-            <p>Let us help you navigate the legal and financial obstacles involved in starting a business. Starting your dream business has never been easier.</p>
-            <a href="#">Get Started <i class="fas fa-caret-right"></i></a>  
-        </div>
-        <div>
-            <img src="file.png" alt="">
-           <h2>Tax Problems</h2>
-           <p>The IRS can be vicious and cruel. Let us handle your tax problems. Save yourself time and money. Our CPAs are trained on how to deal with the agents at the IRS. We can get your tax problems resolved quickly and easily. Our team of CPAs has one of the best track records when it comes to solving Tax Problems. You have a business to run, let us deal with the IRS.</p>
-            <a href="#">Get Started <i class="fas fa-caret-right"></i></a>  
-        </div>         
     </section>
-    <header id="accuracyreports">
-            <div class="headerBox">
-                <div class="contentBox">
-                <h4>Impress your shareholders and investors with a</h4>
-                <h1>
-                    Professional Annual Report
-                </h1>
-                <p>Impress your shareholders and investors with a professional and comprehensive
-                    annual report. Allow our team of trained CPAs help you build a report that will make your company shine to investors and shareholders.
-                </p>
-                <a href="#">Get Started <i class="fas fa-caret-right"></i></a>
+
+    <article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="grid">
+                    <div class="column">
+                        <h4>Bookkeeping</h4>
+                        <p>We help you organize and keep track of your small business financial records. Let us
+                            ensure
+                            your records are accurate and up to date.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <h4>Taxes</h4>
+                        <p>We can help you file your small business tax returns. Our CPAs will help your get the
+                            biggest returns on your taxes.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <h4>Audits</h4>
+                        <p>Performing an audit of your company can be difficult and time consuming a difficult. Let
+                            one
+                            of our trained CPAs handle perform a full audit.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <h4>Annual Reports</h4>
+                        <p>We will prepare an accurate and concise annual report for your small business that you
+                            can
+                            share with shareholders and potential investors.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </header>
-        <article>
-            <div class="image" id="consult">
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
+
+    <section id="team">
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Our Team</h1>
+                <h2>Our team consists of passionate CPAs with diverse backgrounds in finance and business.</h2>
+                <a href="#">Learn More</a>
             </div>
-                <div>
-                   <h1>Free Consultations</h1>
-                <p>Accuracy Accounting & Financial provides free consultations to businesses and families. This no obligations consultation allows us to get familiar with what you, your family, or business. Then together you and one of your trained CPAs create a plan that fits your budget. We will work together with you to find a wide array of options that help prepare you, your family, or business for the future. If by the end of the consultation your not convinced you can walk away free of charge. Consultations can be done anywhere, at your office, in your home, or at your favorite coffee shop. Just give us a call or use or online booking system to make your free consultation  today.</p>
-                <a href="#">Get your free consultation <i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="spacer">
+        </div>
+    </section>
+
+    <article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container_wide">
+                <div class="grid_wide">
+                    <div class="column">
+                        <img src="staff4.png" alt="">
+                        <h4>Leanna Murray</h4>
+                        <h5>CEO, CPA <br> Bookkeeping Manager</h5>
+                        <p>At age 20, Leanna built a online education startup with the help of her father. As
+                            she ran her business she began to realize her love of accounting. She enrolled in GCU
+                            to
+                            pursue a degree in Finance and Accounting where she met Indiana Ortega.</p>
+                        <p>Together Leanna and Indiana founded Accuracy where Leanna is the acting CEO.</p>
+
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <img src="staff3.png" alt="">
+                        <h4>Indiana Ortega</h4>
+                        <h5>Former CEO, CPA <br> Sales Report Specialist</h5>
+                        <p>Indiana Ortega is the founder of Accuracy Accounting. She founded the firm in 2003 after
+                            graduating from Grand Canyon University. In 2008 she stepped down from her role as CEO
+                            in
+                            order to spend more time with her family.</p>
+                        <p>Indiana still heads the Sales Reporting team at Accuracy Accounting and oversees each
+                            report
+                            that Accuracy Accounting prepares.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <img src="staff1.png" alt="">
+                        <h4>Donald Ericson</h4>
+                        <h5>CPA, Auditing Specialist</h5>
+                        <p>Once a freelance CPA, Donald Ericson built a reputation by completing audits for large
+                            corporations. His clients include Walmart, Exxon-Mobile and many other large companies.</p>
+                        <p>He has years of experience and now leads our auditing team at Accuracy Accounting. As
+                            our
+                            auditing specialist he personally oversees
+                            each audit our firm completes.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <img src="staff2.png" alt="">
+                        <h4>Natalia Flores</h4>
+                        <h5>CPA, Tax Specialist</h5>
+                        <p>Natalia Flores is young ambitious Harvard Graduate who joined our team after leaving a
+                            small
+                            tax settlement firm she founded herself while in college.</p>
+                        <p>She leads our team of tax specialist at Accuracy Accounting. Her wealth of experience
+                            has
+                            helped over a thousand companies, big and small, take advantage of huge tax discounts.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <img src="staff5.png" alt="">
+                        <h4>Melinda May</h4>
+                        <h5>CPA, Payroll Manager</h5>
+                        <p>Melinda was the owner of a major hedge fund corporation which she sold in order to
+                            pursue
+                            her dream of starting a business. After successfully running a business for 6 years,
+                            she
+                            sold her company for over $28 million.</p>
+                        <p>After retiring at 30, Melinda took up a leadership position as our Bookkeeping Team
+                            Manager.
+                            Her vast leadership experience skills give her an edge over others in the field.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <img src="staff6.png" alt="">
+                        <h4>David Carson</h4>
+                        <h5>JD, CPA, Business Law Specialist</h5>
+                        <p>David was left as an orphan at age 10. In high school he worked his way to the top of
+                            his
+                            class, and put himself through college with scholarships. He attended Harvard Law
+                            School
+                            where he obtained his MS in Business Law.</p>
+                        <p>He now heads our Business and Legal Department at Accuracy Accounting. David is an
+                            accomplished lawyer and talented accountant.</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                
-            </article>
-            <section>
-                    <div>
-                        <h2>Contact Us</h2>
-                        <a href="#" class="full"><i class="fas fa-phone-square"></i> Call</a> <br>
-                        <a href="#" class="full"><i class="fas fa-envelope-square"></i> Email</a> <br>
-                        <a href="#" class="full"><i class="fas fa-comment-alt"></i> Chat</a>
-                    </div>
-                    <div>
-                        <h2>Services</h2>
-                        <a href="#" class="full"><i class="fas fa-user-circle"></i> Client Portal</a> <br>
-                        <a href="#" class="full"><i class="fas fa-calculator"></i> CPA Helpline</a> <br>
-                        <a href="#" class="full"><i class="fas fa-question-circle"></i> FAQs</a>
-                    </div>
-                    <div>
-                        <h2>Social Media</h2>
-                        <a href="#" class="full"><i class="fab fa-facebook"></i> Facebook</a> <br>
-                        <a href="#" class="full"><i class="fab fa-twitter-square"></i> Twitter</a> <br>
-                        <a href="#" class="full"><i class="fab fa-instagram"></i> Instagram</a>
-                    </div>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
 
-            </section>
+    <section id="plans">
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Shop Plans</h1>
+                <h2>Shop our wide variety of plans and find one that fits your business's needs and budget.</h2>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </section>
 
-           
+    <article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container_wide">
+                <h1>Find a Plan that Works</h1>
+                <h2>We offer a wide range of plans designed to fit the needs of growing businesses.</h2>
+                <div class="grid_wide">
+                    <div class="column">
+                        <h4>Startup</h4>
+                        <h5>$1,000/mo</h5>
+                        <hr>
+                        <h6>Payroll for Up to 25 Employees</h6>
+                        <hr>
+                        <h6>Bookkeeping for Up to $100,000 in Revenue</h6>
+                        <hr>
+                        <h6>Annual Auditing</h6>
+                        <hr>
+                        <h6>Detailed Annual Reports</h6>
+                        <hr>
+                        <h6>Tax Prep and Filing with CPA</h6>
+                        <hr>
+                        <br>
+                        <a href="#" class="plan">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <h4>Business</h4>
+                        <h5>$5,000/mo</h5>
+                        <hr>
+                        <h6>Payroll for Up to 100 Employees</h6>
+                        <hr>
+                        <h6>Bookkeeping for Up to $500,000 in Revenue</h6>
+                        <hr>
+                        <h6>Semi-Annual Auditing</h6>
+                        <hr>
+                        <h6>Detailed Semi-Annual Reports</h6>
+                        <hr>
+                        <h6>Tax Prep and Filing with CPA</h6>
+                        <hr>
+                        <br>
+                        <a href="#" class="plan">Learn More</a>
+                    </div>
+                    <div class="column">
+                        <h4>Corporate</h4>
+                        <h5>$10,000/mo</h5>
+                        <hr>
+                        <h6>Payroll for Up to 250 Employees</h6>
+                        <hr>
+                        <h6>Bookkeeping for Up to $1,000,000 in Revenue</h6>
+                        <hr>
+                        <h6>Quarterly Auditing</h6>
+                        <hr>
+                        <h6>Detailed Quarterly Reports</h6>
+                        <hr>
+                        <h6>Tax Prep and Filing with CPA</h6>
+                        <hr>
+                        <br>
+                        <a href="#" class="plan">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
 
+    <section id="contact">
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Contact Us</h1>
+                <h2>Call us or email uss anytime to connect with a CPA who can help answer your finance questions.</h2>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </section>
+
+    <article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p><i class="fas fa-phone-square"></i> (555) 555-5555 <br>
+                    <i class="fas fa-envelope-square"></i> contact@accuracy.com</p>
+                <p>Or use the form below to send us any questions, comments or concerns.</p>
+                <form action="">
+                    <p>
+                        <label for="#">Name</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label for="#">Email</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label for="#">Phone</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label for="#">Leave your questions, comments, or concerns in the box below.</label>
+                        <textarea name="" id=""></textarea>
+                    </p>
+                    <button>Submit Form</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
+
+    <section id="map">
+        <div class="wrapper">
+            <div class="container">
+                <img src="https://image.flaticon.com/icons/svg/64/64113.svg" alt="" id="pin">
+                <div class="address">
+                    <h1>Main Office <br>
+                        5555 Main Street <br>
+                        Phoenix AZ, 55555 </h1>
+                    <a href="#">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="grid">
+            <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i><br>Facebook</a>
+            <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i><br>Twitter</a>
+            <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i><br>Instagram</a>
+            <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i><br>YouTube</a>
+            <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i><br>LinkedIn</a>
+        </div>
+    </aside>
 </body>
+
 </html>
