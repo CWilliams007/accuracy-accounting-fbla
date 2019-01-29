@@ -13,8 +13,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="main.js"></script>
 </head>
 
@@ -72,16 +70,6 @@
         <div class="spacer">
         </div>
     </header>
-
-    <aside>
-        <div class="grid">
-            <a href="#" class="social"><i class="far fa-chart-bar"></i><br>Services</a>
-            <a href="#" class="social"><i class="fas fa-users"></i><br>Team</a>
-            <a href="#" class="social"><i class="fas fa-columns"></i><br>Plans</a>
-            <a href="#" class="social"><i class="fas fa-comments"></i><br>Contact</a>
-            <a href="#" class="social"><i class="fas fa-question-circle"></i><br>FAQ</a>
-        </div>
-    </aside>
 
     <article>
         <div class="spacer">
@@ -360,25 +348,60 @@
         </div>
     </section>
 
-<article>
+    <article>
         <div class="spacer">
         </div>
         <div class="wrapper">
             <div class="container">
                 <h1>Find Answers</h1>
-                <h2>We've compiled a list.</h2>
-                <p>In 2003 two friends and GCU Business Graduates, Leanna Murray and Indiana Ortega founded
-                    Accuracy
-                    Accounting in Phoenix, Arizona. Leanna and Indiana's parents had been a small business owners
-                    in
-                    Scottsdale, AZ since before either of them were born. Leanna and Indiana were passionate about
-                    helping small businesses grow. Since 2003 Accuracy Accounting has helped over 200 small
-                    business
-                    owners in grow their companies.</p>
-                <p>Leanna, Indiana, and the team at Accuracy Accounting would love to help your small business
-                    grow.
-                    Click the link below to see how we can help your small business thrive.</p>
-                <a href="#">Learn More</a>
+                <h2>We've compiled a list of frequently asked questions for your convience.</h2>
+                <p>If you can't find the
+                    answers you're looking for visit one of our social media outlets and connect with one of our CPAs
+                    who are always online.</p>
+                <button class="accordion">Section 1<i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+
+                <button class="accordion">Section 2<i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+
+                <button class="accordion">Section 3<i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
             </div>
         </div>
         <div class="spacer">
@@ -452,14 +475,3 @@
 </html>
 
 <!-- Accordion -->
-<!-- <div id="accordion">
-        <h3>Section 1<i class="fas fa-chevron-down"></i></h3>
-        <div>
-          <p>
-          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
-        </div>
-    </div> -->
