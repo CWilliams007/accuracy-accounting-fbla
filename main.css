@@ -1,16 +1,21 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 nav {
-    height: 80px;
+    height: 60px;
     display: block;
     position: fixed;
     top: 0;
     background: rgb(34, 34, 34);
     width: 100%;
     z-index: 100;
+    transition: .2s;
 }
 
 div#social,
@@ -22,21 +27,22 @@ nav a {
     font-family: forma-djr-display, sans-serif;
     color: rgb(219, 219, 219);
     background: rgb(34, 34, 34);
-    padding: 28px;
-    font-size: 24px;
+    padding: 18px 20px;
+    font-size: 22px;
     display: inline-block;
     text-decoration: none;
     height: 24px;
     transition: .5s;
     float: left;
+    border-right: 1px rgb(49, 49, 49) solid;
 }
 
 nav span {
     font-family: forma-djr-display, sans-serif;
     color: rgb(219, 219, 219);
     background: rgb(34, 34, 34);
-    padding: 28px;
-    font-size: 24px;
+    padding: 18px 20px;
+    font-size: 22px;
     text-decoration: none;
     height: 24px;
     transition: .5s;
@@ -45,8 +51,8 @@ nav span {
 }
 
 nav img {
-    margin: 0 20px;
-    height: 80px;
+    margin: 0 4px;
+    height: 60px;
     padding: 10px;
     background: rgb(49, 49, 49);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -56,7 +62,7 @@ nav a#image {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 80px;
+    height: 60px;
 }
 
 nav a:hover {
@@ -76,7 +82,7 @@ nav span:hover {
 
 nav a.social {
     float: right;
-    padding: 28px 16px;
+    padding: 18px 16px;
 }
 
 nav a#facebook:hover {
@@ -151,6 +157,7 @@ header a {
     text-decoration: none;
     border: 3px white solid;
     border-radius: 40px;
+    transition: .2s;
 }
 
 header a:hover {
@@ -180,7 +187,7 @@ section#contact {
 }
 
 section#faq {
-    background: url('support.png');
+    background: url('hero_image_faq.png');
     background-size: cover;
 }
 section#map {
@@ -234,6 +241,7 @@ div.address a {
     border-color: rgb(34, 34, 34);
     margin: 16px 20px 0;
     text-align: center;
+    transition: .2s;
 }
 
 div.address a:hover {
@@ -284,6 +292,7 @@ section a {
     text-decoration: none;
     border: 3px white solid;
     border-radius: 40px;
+    transition: .2s;
 }
 
 section a:hover {
@@ -355,6 +364,7 @@ article a {
     text-decoration: none;
     border: 3px rgb(34, 34, 34) solid;
     border-radius: 40px;
+    transition: .2s;
 }
 
 article a:hover {
@@ -487,11 +497,13 @@ form button {
     border: 3px rgb(34, 34, 34) solid;
     border-radius: 40px;
     background: rgb(246, 246, 246);
+    transition: .2s;
 }
 
 form button:hover {
     background: rgb(34, 34, 34);
     color: white;
+    cursor: pointer;
 }
 
 form label {
@@ -501,8 +513,11 @@ form label {
 
 /* Aside */
 aside .grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    overflow: visible;
+    z-index: 5;
 }
 
 aside .grid a {
@@ -518,6 +533,12 @@ aside .grid a {
 
 aside .grid a i {
     font-size: 1.4em;
+}
+
+aside .grid a:hover {
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 aside .grid a#facebook:hover {
@@ -540,13 +561,34 @@ aside .grid a#linkedin:hover {
     background: rgb(0, 119, 181);
 }
 
-@media screen and (max-width: 1300px) {
-    nav a {
-        padding: 28px 14px;
-    }
+/* Accordion */
+div#accordion h3 {
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    font-size: 2em;
+    background: rgb(49, 49, 49);
+    padding: 10px;
+    margin: 10px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px rgb(34, 34, 34) solid;
+    color: rgb(246, 246, 246);
 }
 
-@media screen and (max-width: 1140px) {
+div#accordion h3 i {
+    float: right;
+}
+
+div#accordion div {
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    border: 3px rgb(34, 34, 34) solid;
+    border-top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 1300px) {
     nav div#desktop {
         display: none;
     }
@@ -577,22 +619,18 @@ aside .grid a#linkedin:hover {
 
     nav span {
         display: inline-block;
-        padding: 28px 12px;
     }
 
     nav img {
         margin: 0px;
-        height: 80px;
-        padding: 10px;
         background: rgb(49, 49, 49);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 }
 
 @media screen and (max-width: 768px) {
-    aside .grid {
-        display: grid;
-        grid-template-columns: 1fr;
+    aside .grid a {
+        font-size: 1.3em;
     }
 }
 
@@ -600,19 +638,15 @@ aside .grid a#linkedin:hover {
     nav a.social {
         display: none;
     }
-}
 
-@media screen and (max-width: 380px) {
     nav img {
         margin: 0px;
-        height: 60px;
+        height: 40px;
         padding: 10px;
-        background: rgb(49, 49, 49);
+        background: transparent;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 }
-
-
 
 /* The side navigation menu */
 .sidenav {
@@ -688,3 +722,5 @@ aside .grid a#linkedin:hover {
     border-top: none;
     margin-bottom: 0;
 }
+
+

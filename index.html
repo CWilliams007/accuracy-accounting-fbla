@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://use.typekit.net/czs7dul.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="main.js"></script>
 </head>
 
@@ -27,6 +30,7 @@
         <a href="#">Team</a>
         <a href="#">Plans</a>
         <a href="#">Contact</a>
+        <a href="#">FAQ</a>
         <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i></a>
         <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i></a>
         <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i></a>
@@ -34,7 +38,7 @@
         <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i></a>
     </div>
 
-    <nav>
+    <nav id="navbar">
         <a href="#" id="image"><img src="top_logo.png" alt=""></a>
         <div id="desktop">
             <a href="#">Home</a>
@@ -43,6 +47,7 @@
             <a href="#">Team</a>
             <a href="#">Plans</a>
             <a href="#">Contact</a>
+            <a href="#">FAQ</a>
         </div>
         <span onclick="openNav()"><i class="fas fa-bars"></i> Menu</span>
         <div id="social">
@@ -67,6 +72,16 @@
         <div class="spacer">
         </div>
     </header>
+
+    <aside>
+        <div class="grid">
+            <a href="#" class="social"><i class="far fa-chart-bar"></i><br>Services</a>
+            <a href="#" class="social"><i class="fas fa-users"></i><br>Team</a>
+            <a href="#" class="social"><i class="fas fa-columns"></i><br>Plans</a>
+            <a href="#" class="social"><i class="fas fa-comments"></i><br>Contact</a>
+            <a href="#" class="social"><i class="fas fa-question-circle"></i><br>FAQ</a>
+        </div>
+    </aside>
 
     <article>
         <div class="spacer">
@@ -331,6 +346,45 @@
         </div>
     </article>
 
+    <section id="faq">
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                <h1>Have Questions</h1>
+                <h2>You have a business to run, so we made finding answers to your questions easier than ever.</h2>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </section>
+
+<article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Find Answers</h1>
+                <h2>We've compiled a list.</h2>
+                <p>In 2003 two friends and GCU Business Graduates, Leanna Murray and Indiana Ortega founded
+                    Accuracy
+                    Accounting in Phoenix, Arizona. Leanna and Indiana's parents had been a small business owners
+                    in
+                    Scottsdale, AZ since before either of them were born. Leanna and Indiana were passionate about
+                    helping small businesses grow. Since 2003 Accuracy Accounting has helped over 200 small
+                    business
+                    owners in grow their companies.</p>
+                <p>Leanna, Indiana, and the team at Accuracy Accounting would love to help your small business
+                    grow.
+                    Click the link below to see how we can help your small business thrive.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
+
     <section id="contact">
         <div class="spacer">
         </div>
@@ -373,7 +427,6 @@
                     </p>
                     <button>Submit Form</button>
                 </form>
-
             </div>
         </div>
         <div class="spacer">
@@ -394,15 +447,19 @@
         </div>
     </section>
 
-    <aside>
-        <div class="grid">
-            <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i><br>Facebook</a>
-            <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i><br>Twitter</a>
-            <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i><br>Instagram</a>
-            <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i><br>YouTube</a>
-            <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i><br>LinkedIn</a>
-        </div>
-    </aside>
 </body>
 
 </html>
+
+<!-- Accordion -->
+<!-- <div id="accordion">
+        <h3>Section 1<i class="fas fa-chevron-down"></i></h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+    </div> -->
