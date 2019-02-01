@@ -374,7 +374,13 @@ article h2 {
 
 article .big_numbers_wrapper {
     padding: 40px;
+    transition: .5s;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 #clients {
     background-image: url('happy_client.png');
@@ -406,7 +412,7 @@ article .big_number {
     font-size: 12em;
     line-height: 1em;
     font-weight: 700;
-    transition: .6s;
+    transition: .5s;
 }
 
 article .big_number_subtitle {
@@ -418,14 +424,18 @@ article .big_number_subtitle {
     font-weight: 700;
     position: relative;
     margin-top: -.3em;
-    transition: .6s;
+    transition: .5s;
+}
+
+article .big_numbers_wrapper:hover {
+    filter: saturate(50%);
 }
 
 article .big_numbers_wrapper:hover .big_number {
     color: rgb(246, 246, 246);
 }
 
-article .big_numbers_wrapper:hover .big_number_subtitle{
+article .big_numbers_wrapper:hover .big_number_subtitle {
     color: rgb(238, 238, 238);
 }
 
@@ -475,6 +485,11 @@ article img.icon {
     border-radius: 0;
 }
 
+article img.icon#center {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
 article .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -507,11 +522,21 @@ article h4 {
     padding-bottom: 20px;
 }
 
+article h4#center {
+    text-align: center;
+}
+
 article h5 {
-    font-family: mrs-eaves-xl-serif-narrow, serif;
+    font-family: forma-djr-display,
+        sans-serif;
+    font-weight: 300;
     color: rgb(134, 134, 134);
-    font-size: 2em;
+    font-size: 1.8em;
     margin: -20px 0 10px 0;
+}
+
+article h5#center {
+    text-align: center;
 }
 
 article .price_row {
@@ -558,6 +583,10 @@ article p {
     margin: 0;
     letter-spacing: 2px;
     padding-bottom: 20px;
+}
+
+.column#staff p {
+    font-size: 1em;
 }
 
 /* Form Styles */
@@ -734,7 +763,7 @@ aside .grid a#linkedin:hover {
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
-    
+
     article .container_image .article_image {
         width: 100%;
         background: url('https://images.pexels.com/photos/1124065/pexels-photo-1124065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
@@ -749,7 +778,17 @@ aside .grid a#linkedin:hover {
     }
 
     article .big_number_subtitle {
-        font-size: 3em;
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    article .grid_wide#plans {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0 auto;
     }
 }
 
@@ -767,14 +806,6 @@ aside .grid a#linkedin:hover {
     }
 
     article .grid_wide {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-        padding: 0px;
-        margin: 0 auto;
-    }
-
-    article .grid_wide#plans {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -892,21 +923,21 @@ aside .grid a#linkedin:hover {
 }
 
 .accordion:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .panel {
-    padding: 10px  20px; 
+    padding: 10px 20px;
     display: none;
     overflow: hidden;
-        border: 3px solid rgb(34, 34, 34);
-        border-top: 0px;
+    border: 3px solid rgb(34, 34, 34);
+    border-top: 0px;
 }
 
 button.accordion {
-        font-family: mrs-eaves-xl-serif-narrow,
+    font-family: mrs-eaves-xl-serif-narrow,
         serif;
-        font-size: 1.8em;
+    font-size: 1.8em;
 }
 
 button.accordion i {
