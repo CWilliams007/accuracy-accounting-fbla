@@ -1,3 +1,11 @@
+* {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -335,6 +343,19 @@ article .container_image .article_image {
     background-size: cover;
 }
 
+article .container_image .article_image#contact {
+    width: 100%;
+    background: url('https://images.pexels.com/photos/1798950/pexels-photo-1798950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+}
+
+article .container_image .article_image#quote {
+    width: 100%;
+    background: url('https://images.pexels.com/photos/1181727/pexels-photo-1181727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+}
+
 article .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -585,9 +606,6 @@ article p {
     padding-bottom: 20px;
 }
 
-.column#staff p {
-    font-size: 1em;
-}
 
 /* Form Styles */
 form input {
@@ -647,6 +665,25 @@ form button:hover {
 form label {
     display: inline-block;
     min-width: 80px;
+}
+
+form h2#month {
+    margin-top: -20px;
+}
+
+form #float {
+ float: right;
+ white-space: pre;
+}
+
+input[type="checkbox"] {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+input[type="radio"] {
+    width: 1.4em;
+    height: 1.4em;
 }
 
 /* Aside */
@@ -896,7 +933,7 @@ aside .grid a#linkedin:hover {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 74px;
+    top: 64px;
     right: 4px;
     font-size: 52px;
     margin-left: 50px;
@@ -949,3 +986,5 @@ button.accordion i {
     font-family: forma-djr-display, sans-serif;
     font-weight: 300;
 }
+
+

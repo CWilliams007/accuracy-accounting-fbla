@@ -8,20 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Regular Base Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/czs7dul.css">
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Navigation JS -->
+    <script src="navigation.js"></script>
+    <!-- Quote Calculator JS -->
+    <script src="quote.js"></script>
+     <!-- Animate on Scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate On Scroll JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
-    <script src="jquery_scrollspeed.js"></script>
 </head>
 
 <body onresize="closeNav()">
-    <script>
-        AOS.init();
-    </script>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -133,29 +135,6 @@
         </div>
         <div class="spacer">
         </div>
-        <div class="container_wide" id="gradient">
-            <div class="grid_wide" id="plans">
-                <div class="column_short" id="staff" data-aos="fade-up">
-                    <img src="md_business.png" alt="" class="icon" id="center">
-                    <h4 id="center">Visit Us</h4>
-                    <h5 id="center">5555 Main Street <br>
-                        Phoenix AZ, 55555</h5>
-                </div>
-                <div class="column_short" id="staff" data-aos="fade-up">
-                    <img src="email.png" alt="" class="icon" id="center">
-                    <h4 id="center">Email Us</h4>
-                    <h5 id="center">customers@accuracy <br> join@accuracy.com</h5>
-                </div>
-                <div class="column_short" id="staff" data-aos="fade-up">
-                    <img src="smartphone.png" alt="" class="icon" id="center">
-                    <h4 id="center">Call Us</h4>
-                    <h5 id="center">24/7 Real People <br> (555) 555-5555</h5>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="spacer">
-        </div>
     </article>
 
     <section>
@@ -241,77 +220,52 @@
                         <img src="staff4.png" alt="">
                         <h4>Leanna Murray</h4>
                         <h5>CEO, CPA <br> Bookkeeping Manager</h5>
-                        <p>At age 20, Leanna built a online education startup with the help of her father. As
-                            she ran her business she began to realize her love of accounting. She enrolled in GCU
-                            to
-                            pursue a degree in Finance and Accounting where she met Indiana Ortega.</p>
-                        <p>Together Leanna and Indiana founded Accuracy where Leanna is the acting CEO.</p>
-
+                        <p>Leanna is the co-founder of Accuracy Accounting along with her friend Indiana. Leanna is the
+                            acting CEO of Accuracy as well as our Bookkeeping Manager </p>
                         <a href="#">Learn More</a>
                     </div>
                     <div class="column" id="staff">
                         <img src="staff3.png" alt="">
                         <h4>Indiana Ortega</h4>
                         <h5>Former CEO, CPA <br> Sales Report Specialist</h5>
-                        <p>Indiana Ortega is the founder of Accuracy Accounting. She founded the firm in 2003 after
-                            graduating from Grand Canyon University. In 2008 she stepped down from her role as CEO
-                            in
-                            order to spend more time with her family.</p>
-                        <p>Indiana still heads the Sales Reporting team at Accuracy Accounting and oversees each
-                            report
-                            that Accuracy Accounting prepares.</p>
+                        <p>Indiana is the co-founder of Accuracy Accounting along with Leanna. She stepped down as CEO
+                            to spend time with family and is now our Sales Report Specialist.</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div class="column" id="staff">
                         <img src="staff1.png" alt="">
                         <h4>Donald Ericson</h4>
                         <h5>CPA, Auditing Specialist</h5>
-                        <p>Once a freelance CPA, Donald Ericson built a reputation by completing audits for large
-                            corporations. His clients include Walmart, Exxon-Mobile and many other large companies.</p>
-                        <p>He has years of experience and now leads our auditing team at Accuracy Accounting. As
-                            our
-                            auditing specialist he personally oversees
-                            each audit our firm completes.</p>
+                        <p>Donald was once a freelance auditor with a host of name brand clients such as Walmart&trade;
+                            and ExxonMobil&trade;. He now acts as our resident Auditing Specialist with over 20 years
+                            in the industry.</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div class="column" id="staff">
                         <img src="staff2.png" alt="">
                         <h4>Natalia Flores</h4>
                         <h5>CPA, Tax Specialist</h5>
-                        <p>Natalia Flores is young ambitious Harvard Graduate who joined our team after leaving a
-                            small
-                            tax settlement firm she founded herself while in college.</p>
-                        <p>She leads our team of tax specialist at Accuracy Accounting. Her wealth of experience
-                            has
-                            helped over a thousand companies, big and small, take advantage of huge tax discounts.</p>
+                        <p>Natalia is a Harvard Graduate who founded and managed a highly regarded tax settlement firm
+                            for over 10 years. The firm was purchased by Accuracy in 2011. Natalia is now our Executive
+                            Tax Specialist</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div class="column" id="staff">
                         <img src="staff5.png" alt="">
                         <h4>Melinda May</h4>
                         <h5>CPA, Payroll Manager</h5>
-                        <p class="staff">Melinda was the owner of a major hedge fund corporation which she sold in
-                            order to
-                            pursue
-                            her dream of starting a business. After successfully running a business for 6 years,
-                            she
-                            sold her company for over $28 million.</p>
-                        <p>After retiring at 30, Melinda took up a leadership position as our Bookkeeping Team
-                            Manager.
-                            Her vast leadership experience skills give her an edge over others in the field.</p>
+                        <p class="staff">Melinda was the CFO of a market fresh grocery chain in New York. After
+                            stepping down as CFO Melinda came to Accuracy. Her experience as a CFO led her to a
+                            position as an Executive Payroll Manager</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div class="column" id="staff">
                         <img src="staff6.png" alt="">
                         <h4>David Carson</h4>
                         <h5>JD, CPA, Business Law Specialist</h5>
-                        <p>David was left as an orphan at age 10. In high school he worked his way to the top of
-                            his
-                            class, and put himself through college with scholarships. He attended Harvard Law
-                            School
-                            where he obtained his MS in Business Law.</p>
-                        <p>He now heads our Business and Legal Department at Accuracy Accounting. David is an
-                            accomplished lawyer and talented accountant.</p>
+                        <p>David graduated top of his class at Harvard Law School before moving south to Arizona. He
+                            worked for a Phoenix Law Firm for 8 years before taking a position at Accuracy as our
+                            Business Law Specialist. </p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
@@ -346,7 +300,7 @@
                     <div class="column">
                         <img src="sm_business.png" alt="" class="icon">
                         <h4>Startup</h4>
-                        <h5>$250/mo</h5>
+                        <h5>$150/mo</h5>
                         <div class="price_row">
                             <h6>Payroll for Up to 25 Employees</h6>
                         </div>
@@ -367,7 +321,7 @@
                     <div class="column">
                         <img src="md_business.png" alt="" class="icon">
                         <h4>Business</h4>
-                        <h5>$1,000/mo</h5>
+                        <h5>$750/mo</h5>
                         <div class="price_row">
                             <h6>Payroll for Up to 250 Employees</h6>
                         </div>
@@ -388,7 +342,7 @@
                     <div class="column">
                         <img src="lg_business.png" alt="" class="icon">
                         <h4>Corporate</h4>
-                        <h5>$2,500/mo</h5>
+                        <h5>$2,000/mo</h5>
                         <div class="price_row">
                             <h6>Payroll for Up to 1000 Employees</h6>
                         </div>
@@ -409,6 +363,40 @@
                 </div>
             </div>
         </div>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+                <div class="container_image">
+                    <div class="article_image" id="quote">
+                    </div>
+                    <div>
+                        <h1>Win Big With A Customized Quote</h1>
+                        <h2>Enter your company's information below to see how much you could save.</h2>
+                        <form action="">
+                            <p>Every plan start with a base service fee of $125.</p>
+                            <p>We charge just $0.50 per month for every employee you have on your payroll.</p>
+                            <p>
+                                <label for="#">Employees</label> <br>
+                                <input type="number" id="employees">
+                            </p>
+                            <p>We have the some of the lowest rates in the country. We take just one hundreth of every cent you make.</p>
+                            <p>
+                                <label for="#">Gross Revenue</label> <br>
+                                <input type="number" id="revenue">
+                            </p>
+                            <p>Non-Profits can receive a 10% discount on their entire monthly services charge. Documentation will have to be provided upon contract signing to receive discounts.</p>
+                            <p>
+                                <input type="checkbox" id="non-profit" onchange='handleChange(this);'>
+                                <label for="#">Non-Profit</label>
+                            </p>
+                            <p>Real contract may vary slightly from estimate based on specific customer needs.</p>
+                            <h1 id="cost">$125.00</h1>
+                            <h2 id="month">per month</h2>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
         <div class="spacer">
         </div>
     </article>
@@ -433,36 +421,9 @@
         <div class="wrapper">
             <div class="container">
                 <h1>Find Answers</h1>
-                <h2>We've compiled a list of frequently asked questions for your convience.</h2>
-                <p>If you can't find the
-                    answers you're looking for visit one of our social media outlets and connect with one of our CPAs
-                    who are always online.</p>
-                <button class="accordion">Section 1<i class="fas fa-plus-square"></i></button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo
-                        consequat.</p>
-                </div>
+                <h2>We've compiled a list of frequently asked questions for your convenience.</h2>
+                <p>If you can't find the answers you're looking for visit one of our social media outlets and connect with one of our CPAs who are always online.</p>
 
-                <button class="accordion">Section 2<i class="fas fa-plus-square"></i></button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-
-                <button class="accordion">Section 3<i class="fas fa-plus-square"></i></button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo
-                        consequat.</p>
-                </div>
             </div>
         </div>
         <div class="spacer">
@@ -487,30 +448,56 @@
         <div class="spacer">
         </div>
         <div class="wrapper">
-            <div class="container">
-                <h1>Get in Touch</h1>
-                <p><i class="fas fa-phone-square"></i> (555) 555-5555 <br>
-                    <i class="fas fa-envelope-square"></i> contact@accuracy.com</p>
-                <p>Or use the form below to send us any questions, comments or concerns.</p>
-                <form action="">
-                    <p>
-                        <label for="#">Name</label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="#">Email</label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="#">Phone</label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="#">Leave your questions, comments, or concerns in the box below.</label>
-                        <textarea name="" id=""></textarea>
-                    </p>
-                    <button>Submit Form</button>
-                </form>
+            <div class="container_wide" id="gradient">
+                <div class="grid_wide" id="plans">
+                    <div class="column_short" id="staff" data-aos="fade-up">
+                        <img src="md_business.png" alt="" class="icon" id="center">
+                        <h4 id="center">Visit Us</h4>
+                        <h5 id="center">5555 Main Street <br>
+                            Phoenix AZ, 55555</h5>
+                    </div>
+                    <div class="column_short" id="staff" data-aos="fade-up">
+                        <img src="email.png" alt="" class="icon" id="center">
+                        <h4 id="center">Email Us</h4>
+                        <h5 id="center">customers@accuracy <br> join@accuracy.com</h5>
+                    </div>
+                    <div class="column_short" id="staff" data-aos="fade-up">
+                        <img src="smartphone.png" alt="" class="icon" id="center">
+                        <h4 id="center">Call Us</h4>
+                        <h5 id="center">24/7 Real People <br> (555) 555-5555</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container_image">
+                <div class="article_image" id="contact">
+
+                </div>
+                <div>
+                    <h1>Get in Touch</h1>
+                    <form action="">
+                        <p>
+                            <label for="#">Name</label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label for="#">Email</label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label for="#">Phone</label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label for="#">Leave your questions, comments, or concerns in the box below.</label>
+                            <textarea name="" id=""></textarea>
+                        </p>
+                        <button>Submit Form</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="spacer">
@@ -531,8 +518,12 @@
         </div>
     </section>
 
-</body>
 
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
 </html>
 
 
