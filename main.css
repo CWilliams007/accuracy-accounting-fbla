@@ -608,7 +608,25 @@ article p {
 
 
 /* Form Styles */
+
+form#book {
+    columns: 2;
+}
+
 form input {
+    display: inline-block;
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    color: rgb(34, 34, 34);
+    font-size: .8em;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 3px rgb(34, 34, 34) solid;
+    border-radius: 40px;
+    background: rgb(246, 246, 246);
+}
+
+form select {
     display: inline-block;
     font-family: mrs-eaves-xl-serif-narrow, serif;
     color: rgb(34, 34, 34);
@@ -663,7 +681,7 @@ form button:hover {
 }
 
 form label {
-    display: inline-block;
+    display: block;
     min-width: 80px;
 }
 

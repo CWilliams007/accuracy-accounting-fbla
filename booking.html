@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Regular Base Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/czs7dul.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Navigation JS -->
+    <script src="navigation.js"></script>
+    <!-- Quote Calculator JS -->
+    <script src="quote.js"></script>
+     <!-- Animate on Scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body onresize="closeNav()">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Team</a>
+        <a href="#">Plans</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <nav id="navbar">
+        <a href="#" id="image"><img src="top_logo.png" alt=""></a>
+        <div id="desktop">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Plans</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+        </div>
+        <span onclick="openNav()"><i class="fas fa-bars"></i> Menu</span>
+        <div id="social">
+            <a href="#" class="social" id="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social" id="twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="social" id="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social" id="youtube"><i class="fab fa-youtube-square"></i></a>
+            <a href="#" class="social" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container" data-aos="fade-right">
+                <h1>Book Your Appointment<br>
+                    and See the Difference</h1>
+                <h2>Book an Appointment with ease and see the difference Accuracy can make for your company.</h2>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </header>
+
+    <article>
+        <div class="spacer">
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div>
+                    <h1>Get in Touch</h1>
+                    <form action="" id="book">
+                        <p>
+                           <label for="">Name</label>
+                        <input type="text"> 
+                        </p>
+                        <p>
+                          <label for="">Company</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                          <label for="">Phone Number</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                          <label for="">Email Address</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                          <label for="">Street Address</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                          <label for="">Town/City</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                           <label for="">State</label>
+                        <input type="text">  
+                        </p>
+                        <p>
+                          <label for="">Zip Code</label>
+                        <input type="text">  
+                        </p>
+                       <p>
+                           <label for="">Appointment Type</label>
+                        <select name="" id="">
+                          <option value="">Free Initial Consultation</option>
+                          <option value="">Bookkeeping Review</option>
+                          <option value="">Tax Prep/Filing</option>
+                          <option value="">Report Creation</option>
+                          <option value="">Audit Review</option>
+                          <option value="">Payroll Setup</option>
+                          <option value="">Finance Consultation</option>
+                          <option value="">Business Legal Consultation</option>
+                        </select> 
+                       </p>
+                       <p>
+                          <label for="">Appointment Type</label>
+                        <select name="" id="">
+                          <option value="">Phoenix Office</option>
+                          <option value="">Tuscon Office</option>
+                          <option value="">Las Vegas Office</option>
+                          <option value="">Video Conference</option>
+                          <option value="">Tele Conference</option>
+                        </select>  
+                       </p>
+                        <p>
+                          <label for="">Appointment Date</label>
+                        <input type="date">  
+                        </p>
+                       <p>
+                         <label for="">Appointment Time</label>
+                        <select name="" id="">
+                          <option value="">8:00AM-9:00AM</option>
+                          <option value="">9:00AM-10:00AM</option>
+                          <option value="">10:00AM-11:00AM</option>
+                          <option value="">11:00AM-12:00PM</option>
+                          <option value="">12:00PM-1:00PM</option>
+                          <option value="">1:00PM-2:00PM</option>
+                          <option value="">2:00PM-3:00PM</option>
+                          <option value="">3:00PM-4:00PM</option>
+                          <option value="">4:00PM-5:00PM</option>
+                          <option value="">5:00PM-6:00PM</option>
+                        </select>  
+                       </p>
+                       
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="spacer">
+        </div>
+    </article>
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
+
+
+<!-- Attributions -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/wichaiwi" title="Wichai.wi">Wichai.wi</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
