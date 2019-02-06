@@ -176,6 +176,299 @@ header a:hover {
     color: rgb(34, 34, 34);
 }
 
+/* Hero Card Styles */
+.hero_card {
+    margin-top: 60px;
+    display: block;
+    background: url('img/hero_image_business.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero_card .spacer {
+    display: block;
+    height: 160px;
+}
+
+.hero_card .wrapper {
+    display: block;
+}
+
+.hero_card .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.hero_card h1 {
+    font-family: forma-djr-display, sans-serif;
+    font-size: 6em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero_card hr {
+    border: 4px white solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 60%;
+    margin: 20px auto;
+}
+
+.hero_card h2 {
+    display: block;
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    color: white;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    max-width: 1000px;
+}
+
+.hero_card a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: forma-djr-display, sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 5px solid white;
+    padding: 14px 24px;
+    border-radius: 40px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.hero_card a:hover {
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.85));
+}
+
+/* Service Card */
+.service_card {
+    display: block;
+}
+
+.service_card .spacer {
+    display: block;
+    height: 40px;
+    background:rgb(7, 58, 124);
+}
+
+.service_card .wrapper {
+    display: block;
+    background:rgb(7, 58, 124);
+}
+
+.service_card .container_wide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 20px;
+}
+
+.service_card .container_wide .card_bookkeeping {
+    display: block;
+    background: url('img/bookkeeping.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_taxes {
+    display: block;
+    background: url('img/tax.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_audit {
+    display: block;
+    background: url('img/audit.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_report {
+    display: block;
+    background: url('img/report.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card h1 {
+    font-family: forma-djr-display, sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+
+.service_card hr {
+    border: 4px white solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 60%;
+    margin: 20px auto;
+}
+
+.service_card p {
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+
+.service_card a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 3px white solid;
+    border-radius: 40px;
+    transition: .2s;
+}
+
+.service_card a:hover {
+    background: white;
+    color: rgb(34, 34, 34);
+}
+
+/* Horizontal Image Bars */
+
+
+.horizontal_image_bar .spacer {
+    background:rgb(5, 94, 211);
+}
+
+.horizontal_image_bar .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:rgb(5, 94, 211);
+}
+
+.horizontal_image_bar .container#right .photo {
+    display: block;
+    background:url('img/arrow_left.png'), url('https://images.pexels.com/photos/1056556/pexels-photo-1056556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: right center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+    min-height: 450px;
+}
+
+.horizontal_image_bar .container#left .photo {
+    display: block;
+    background:url('img/arrow_right.png'), url('https://images.pexels.com/photos/1056556/pexels-photo-1056556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: left center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+    min-height: 450px;
+}
+
+.horizontal_image_bar .container .photo#team {
+    background:url('img/arrow_left.png'), url('https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: right center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+}
+
+.horizontal_image_bar .container .photo#service {
+    background:url('img/arrow_right.png'), url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: left center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+}
+
+.horizontal_image_bar .container .photo#location {
+    background:url('img/arrow_left.png'), url('https://images.pexels.com/photos/1308783/pexels-photo-1308783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: right center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+}
+
+.horizontal_image_bar .container .photo#consult {
+    background:url('img/arrow_right.png'), url('https://images.pexels.com/photos/1311547/pexels-photo-1311547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: left center, center center;
+    background-repeat: no-repeat;
+    background-size: 140px 200px, cover;
+}
+
+
+.horizontal_image_bar .text_box {
+    padding: 40px;
+}
+
+.horizontal_image_bar .text_box h1 {
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.horizontal_image_bar .text_box h2 {
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.horizontal_image_bar a {
+    display: inline-block;
+    position: relative;
+    font-family: mrs-eaves-xl-serif-narrow, serif;
+    color: white;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 3px white solid;
+    border-radius: 40px;
+    transition: .2s;
+}
+
+.right {
+    float: right;
+}
+
+.horizontal_image_bar a:hover {
+    background: white;
+    color: rgb(34, 34, 34);
+}
+
+.right {
+    text-align: right;
+}
+
 /* Section Styles */
 section {
     background: url('img/hero_image_service.png');
@@ -444,7 +737,6 @@ article .big_number_subtitle {
     line-height: 1em;
     font-weight: 700;
     position: relative;
-    margin-top: -.3em;
     transition: .5s;
 }
 
@@ -867,6 +1159,14 @@ aside .grid a#linkedin:hover {
         padding: 0px;
         margin: 0 auto;
     }
+
+    
+    .hero_card h1 {
+        font-size: 4em;
+    }
+    .hero_card h2 {
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -880,6 +1180,20 @@ aside .grid a#linkedin:hover {
         padding: 10px;
         background: transparent;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    article .big_numbers_wrapper {
+        padding: 20px;
+    }
+
+    article .big_number {
+        font-size: 5em;
+    }
+    
+    article .big_number_subtitle {
+        font-size: 2em;
     }
 }
 
