@@ -4,7 +4,6 @@ var revenue;
 var total;
 var audit;
 
-
 document.onkeyup = function calc() {
     employee = document.getElementById('employees').value;
     revenue = document.getElementById('revenue').value;

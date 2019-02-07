@@ -307,6 +307,34 @@ header a:hover {
     margin: 20px;
 }
 
+.service_card .container_wide .card_email {
+    display: block;
+    background: url('img/email.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_phone {
+    display: block;
+    background: url('img/smartphone.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_office {
+    display: block;
+    background: url('img/md_business.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
+.service_card .container_wide .card_site {
+    display: block;
+    background: url('img/report.png') no-repeat top center;
+    background-size: 128px 128px;
+    margin: 20px;
+}
+
 .service_card h1 {
     font-family: forma-djr-display, sans-serif;
     font-size: 3em;
@@ -330,7 +358,7 @@ header a:hover {
     font-family: forma-djr-display, sans-serif;
     font-weight: 300;
     color: white;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 0;
     letter-spacing: 2px;
     padding-bottom: 20px;
@@ -370,7 +398,7 @@ header a:hover {
 .horizontal_image_bar .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background:rgb(5, 94, 211);
+    background:rgb(82, 82, 82);
 }
 
 .horizontal_image_bar .container#right .photo {
@@ -388,7 +416,7 @@ header a:hover {
     background-position: left center, center center;
     background-repeat: no-repeat;
     background-size: 140px 200px, cover;
-    min-height: 450px;
+    min-height: 480px;
 }
 
 .horizontal_image_bar .container .photo#team {
@@ -421,7 +449,7 @@ header a:hover {
 
 
 .horizontal_image_bar .text_box {
-    padding: 40px;
+    padding: 80px 40px;
 }
 
 .horizontal_image_bar .text_box h1 {
@@ -471,6 +499,7 @@ header a:hover {
 
 /* Section Styles */
 section {
+    margin-top: 60px;
     background: url('img/hero_image_service.png');
     background-size: cover;
 }
@@ -496,6 +525,7 @@ section#faq {
 }
 
 section#map {
+    margin-top: 0;
     display: block;
     height: 600px;
     position: relative;
@@ -898,6 +928,9 @@ article p {
     padding-bottom: 20px;
 }
 
+article p.wide {
+    max-width: 1000px;
+}
 
 /* Form Styles */
 
@@ -1022,29 +1055,7 @@ aside .grid a i {
 }
 
 aside .grid a:hover {
-    background-color: rgb(49, 49, 49);
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-aside .grid a#facebook:hover {
-    background: rgb(59, 89, 152);
-}
-
-aside .grid a#twitter:hover {
-    background: rgb(29, 161, 242);
-}
-
-aside .grid a#instagram:hover {
-    background: rgb(195, 42, 163);
-}
-
-aside .grid a#youtube:hover {
-    background: rgb(255, 0, 0);
-}
-
-aside .grid a#linkedin:hover {
-    background: rgb(0, 119, 181);
+    background-color: rgb(66, 66, 66);
 }
 
 @media screen and (max-width: 1300px) {
