@@ -1,9 +1,9 @@
 * {
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
@@ -248,6 +248,22 @@ header a:hover {
     border-radius: 40px;
     margin-top: 20px;
     transition: .5s;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        padding: 7px 24px 21px;
+    }
+
+    50% {
+        padding: 21px 24px 7px;
+    }
+
+    100% {
+        padding: 7px 24px 21px;
+    }
+
 }
 
 .mission_statement a:hover {
@@ -340,12 +356,12 @@ header a:hover {
 .service_card .spacer {
     display: block;
     height: 40px;
-    background:rgb(7, 58, 124);
+    background: rgb(7, 58, 124);
 }
 
 .service_card .wrapper {
     display: block;
-    background:rgb(7, 58, 124);
+    background: rgb(7, 58, 124);
 }
 
 .service_card .container_wide {
@@ -985,8 +1001,8 @@ form h2#month {
 }
 
 form #float {
- float: right;
- white-space: pre;
+    float: right;
+    white-space: pre;
 }
 
 input[type="checkbox"] {
@@ -1149,10 +1165,11 @@ aside .grid a:hover {
         margin: 0 auto;
     }
 
-    
+
     .hero_card h1 {
         font-size: 4em;
     }
+
     .hero_card h2 {
         font-size: 2em;
     }
@@ -1198,7 +1215,7 @@ aside .grid a:hover {
     article .big_number {
         font-size: 5em;
     }
-    
+
     article .big_number_subtitle {
         font-size: 2em;
     }
@@ -1325,5 +1342,3 @@ button.accordion i {
     font-family: forma-djr-display, sans-serif;
     font-weight: 300;
 }
-
-
