@@ -147,6 +147,11 @@ header h1 {
     padding-bottom: 20px;
 }
 
+/* underlines text, used on get in touch h1 for contact box */
+.underLine {
+    text-decoration: underline;
+}
+
 header h2 {
     font-family: forma-djr-display, sans-serif;
     font-weight: 300;
@@ -346,6 +351,12 @@ header a:hover {
 
 .hero_card a:hover {
     filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.85));
+}
+
+/* making a new horizontal rule for heros on services and other pages */
+.hero_hr {
+    width: 25%;
+
 }
 
 /* Service Card */
@@ -935,6 +946,8 @@ form input {
     border: 3px rgb(34, 34, 34) solid;
     border-radius: 40px;
     background: rgb(246, 246, 246);
+    /* added a box shadow to the inputs for comment box */
+    box-shadow: 1px 5px 5px black;
 }
 
 form select {
@@ -969,6 +982,8 @@ form textarea {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     background: rgb(246, 246, 246);
+    /* adding a box shadow to text area for comments */
+    box-shadow: 1px 5px 5px black;
 }
 
 form button {
