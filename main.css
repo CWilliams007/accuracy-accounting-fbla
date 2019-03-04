@@ -1059,6 +1059,70 @@ aside .grid a:hover {
     background-color: rgb(66, 66, 66);
 }
 
+
+/* footer from acc accounting 2 */
+#footerMobile {
+    display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgb(17, 17, 17);
+    border-top: 2px rgb(105, 105, 105) solid;
+    padding: 20px 20px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+footer div {
+    padding: 20px;
+}
+
+footer h1 {
+    font-family: roboto-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(17, 17, 17);
+    text-transform: none;
+    margin: 0 0 10px;
+    color: rgb(53, 210, 231);
+}
+
+footer hr {
+    border: 2px rgb(161, 245, 106) solid;
+    width: 30px;
+    float: left;
+    margin: 10px 0 26px;
+}
+
+footer a {
+    clear: both;
+    display: block;
+    font-family: roboto-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(200, 200, 200);
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(161, 245, 106);
+}
+
+footer img {
+    color: rgb(161, 245, 106);
+    width: 200px;
+    margin-right: 8px;
+}
+
+
+
+
 @media screen and (max-width: 1300px) {
     nav div#desktop {
         display: none;
@@ -1070,6 +1134,10 @@ aside .grid a:hover {
 
     nav span {
         display: inline-block;
+    }
+
+    article {
+        overflow-x: hidden;
     }
 
     article .grid {
@@ -1104,6 +1172,10 @@ aside .grid a:hover {
         margin: 0px;
         background: rgb(49, 49, 49);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .pad-right {
+        padding-right: 0px;
     }
 }
 
@@ -1147,6 +1219,10 @@ aside .grid a:hover {
     article .big_number_subtitle {
         font-size: 2.8em;
     }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1188,6 +1264,13 @@ aside .grid a:hover {
     .hero_card h2 {
         font-size: 2em;
     }
+
+    #footerDesktop {
+        display: none;
+    }
+    #footerMobile {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -1219,6 +1302,10 @@ aside .grid a:hover {
 
     aside .grid a {
         border-bottom: 2px rgb(49, 49, 49) solid;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
