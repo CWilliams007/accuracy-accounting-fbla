@@ -1061,7 +1061,20 @@ aside .grid a:hover {
 
 
 /* footer from acc accounting 2 */
-#footerMobile {
+
+.footerHome {
+    display: none;
+}
+
+.footerSocial {
+    display: none;
+}
+
+.footerContact {
+    display: none;
+}
+
+.footerMobile {
     display: none;
 }
 
@@ -1183,6 +1196,7 @@ footer img {
     article .big_number {
         font-size: 8em;
     }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1209,6 +1223,10 @@ footer img {
         max-width: 1600px;
         padding: 20px;
     }
+
+    footer div {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1220,9 +1238,23 @@ footer img {
         font-size: 2.8em;
     }
 
-    footer {
-        grid-template-columns: repeat(3, 1fr);
+    footer div {
+        display: none;
     }
+
+    .footerHome {
+        display: block;
+    }
+
+    .footerSocial {
+        display: block;
+    }
+
+    .footerContact {
+        display: block;
+    }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1265,12 +1297,6 @@ footer img {
         font-size: 2em;
     }
 
-    #footerDesktop {
-        display: none;
-    }
-    #footerMobile {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 670px) {
@@ -1285,6 +1311,30 @@ footer img {
         background: transparent;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
+
+    footer div {
+        display: none;
+    }
+
+    .footerHome {
+        display: none;
+    }
+
+    .footerSocial {
+        display: block;
+    }
+
+    .footerContact {
+        display: block;
+    }
+
+
+    .footerMobile {
+        display: none;
+    }
+
+
+
 }
 
 @media screen and (max-width: 560px) {
